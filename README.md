@@ -1,91 +1,152 @@
-# WineSense — Sensor de Temperatura na Fermentação de Vinho
+# 🍷 WineSense — Repositório de Negócios
 
-O WineSense é uma solução baseada em IoT para monitoramento contínuo da temperatura durante o processo de fermentação vinícola. O sistema utiliza sensores térmicos integrados a uma plataforma web, permitindo identificar rapidamente qualquer desvio no controle térmico e realizar intervenções imediatas, reduzindo perdas e garantindo a qualidade do vinho.
+O **WineSense** é uma solução voltada para o monitoramento inteligente da fermentação de vinhos, com foco na redução de perdas produtivas, aumento da qualidade e melhoria da eficiência operacional em vinícolas.
 
-### 📊 Diagrama de Visão de Negócio
+Este repositório apresenta a **visão de negócio**, contexto de mercado, problema, proposta de valor e estrutura do projeto sob a perspectiva estratégica.
 
-<img src="diagramas\visao-de-negocio\diagrama-negocio-winesense.png" width="500"/>
+---
 
-## 💻 Site Institucional
-<div align="center">
-  <img src="site-institucional\home.png" width="500"/>
-  <img src="site-institucional\sobre.png" width="500"/>
-  <img src="site-institucional\simulador.png" width="500"/>
-</div>
+## 📊 Visão de Negócio
 
+O WineSense atua no setor vitivinícola oferecendo um sistema de monitoramento contínuo da temperatura durante a fermentação, etapa crítica na produção de vinhos.
 
-## 🚀 Começando
+A solução permite:
 
-Essas instruções permitirão que você obtenha uma cópia do projeto em operação na sua máquina local para fins de desenvolvimento e teste.
+- Monitoramento em tempo real  
+- Identificação precoce de desvios térmicos  
+- Redução de perdas produtivas  
+- Padronização da qualidade do vinho  
 
+---
 
-### 📋 Pré-requisitos
+## 🌎 Contexto
 
-- Arduino Uno
-- Sensor de temperatura LM35
-- Arduino IDE instalada
-- Navegador web moderno (para o simulador financeiro)
+O Brasil é um grande consumidor de vinhos, especialmente tinto e branco. No entanto, a produção e conservação exigem condições extremamente controladas.
 
-```
-Arduino IDE: https://docs.arduino.cc/software/ide/
-```
+A fermentação é altamente sensível à temperatura:
 
-### 🔧 Instalação
+- Temperaturas altas → aceleram deterioração  
+- Temperaturas baixas → prejudicam aroma, sabor e maturação  
 
-**1. Clone o repositório:**
+Além disso, fatores como mudanças climáticas têm intensificado esses desafios, impactando diretamente a produção global.
 
-```
-git clone https://github.com/isacardosods/WineSense.git
-```
+---
 
-**2. Abra o código do Arduino na IDE:**
+## ⚠️ Problema
 
-```
-Arquivo > Abrir > sensor-temperatura.ino
-```
+A indústria do vinho enfrenta perdas significativas devido à falta de controle eficiente na fermentação.
 
-**3. Conecte o LM35 ao Arduino Uno:**
+- Produção mundial estimada: **232 milhões de hectolitros (2025)**  
+- Queda de **7% em relação à média histórica**  
+- Perda estimada: **1,76 bilhões de litros**  
+- Impacto financeiro: **US$ 7,04 bilhões/ano**
 
-```
-Pino esquerdo (VCC) → 5V
-Pino do meio (Vout) → A0
-Pino direito (GND) → GND
-```
+Principais causas:
 
-**4. Abra o simulador financeiro no navegador:**
+- Variações climáticas  
+- Falta de monitoramento contínuo  
+- Falhas na condução da fermentação  
 
-```
-Abrir o arquivo: simulador-financeiro/simuladorFinanceiro.html diretamente no navegador
-```
+---
 
-**5. Abra e execute o arquivo SQL no MySQL:**
+## 🎯 Objetivo
 
-```
-Abrir o arquivo: banco-de-dados\BD-Sprint1-final.sql no MySQL
-```
+Desenvolver um sistema capaz de:
 
-## 🛠️ Construído com
+- Monitorar continuamente a temperatura durante a fermentação  
+- Identificar variações em tempo real  
+- Gerar alertas preventivos  
+- Apoiar decisões operacionais  
 
-* Arduino Uno — Plataforma de prototipagem eletrônica
-* LM35 — Sensor de temperatura analógico
-* [Arduino IDE](https://docs.arduino.cc/software/ide/) — Ambiente de desenvolvimento
-* HTML/CSS/JavaScript — Simulador financeiro web
-* [MySQL](https://dev.mysql.com) — Banco de dados
+O foco é:
 
-## ✒️ Autores
+- Reduzir prejuízos financeiros  
+- Melhorar a qualidade do produto final  
+- Aumentar a eficiência produtiva  
+- Promover sustentabilidade no processo  
 
-* **Ana Clara Ferreira Clarete**
-* **Beatriz Mustafa Ferreira**
-* **Emanuelly Cristini Alves de Melo**
-* **Fernanda Rodrigues Leal**
-* **Isabella Cardoso dos Santos** 
-* **Sarah Tiemi Sato**
-* **Thays Ramos da Silva Delfino**
+---
 
-## 📚 Fontes e Referências
+## 💡 Proposta de Valor
 
-* OIV — Organização Internacional da Vinha e do Vinho: https://www.oiv.int
-* UC Davis — Problem Fermentations: https://wineserver.ucdavis.edu
-* Wikipedia — Fermentation in Winemaking: https://en.wikipedia.org/wiki/Fermentation_in_winemaking
-* Embrapa Uva e Vinho: https://www.embrapa.br/uva-e-vinho
-* Carla Lopes André et al. — Implantação de Sistema IoT para Monitoramento da Temperatura do Processo de Fermentação em uma Vitivinícola Instalada no Vale do São Francisco. Revista de Engenharia e Pesquisa Aplicada, v.9, n.3, 2024.
+O WineSense entrega para vinícolas:
+
+- 📉 Redução de perdas produtivas  
+- 🍷 Melhoria na qualidade do vinho  
+- ⏱️ Resposta rápida a problemas  
+- 📊 Dados para tomada de decisão  
+- 🌱 Maior eficiência e sustentabilidade  
+
+---
+
+## 🏭 Público-Alvo
+
+- Vinícolas de pequeno, médio e grande porte  
+- Produtores independentes de vinho  
+- Cooperativas agrícolas  
+- Empresas do setor de bebidas  
+
+---
+
+## 🧩 Escopo do Projeto
+
+O sistema contempla:
+
+- Coleta de dados de temperatura durante a fermentação  
+- Armazenamento e análise de dados  
+- Visualização por meio de dashboards  
+- Geração de alertas em caso de anomalias  
+
+Também inclui:
+
+- Site institucional  
+- Simulador financeiro  
+- Sistema de cadastro e acompanhamento  
+
+---
+
+## 📌 Premissas
+
+- Existência de infraestrutura com acesso à internet  
+- Ambiente físico adequado para instalação dos sensores  
+- Uso durante o processo de fermentação  
+
+---
+
+## 🚫 Restrições
+
+- Monitoramento limitado à temperatura  
+- Não realiza controle automático (apenas alerta)  
+- Aplicação restrita à etapa de fermentação  
+- Uso de tecnologias previamente definidas no projeto  
+
+---
+
+## 📈 Impacto Esperado
+
+Com a implementação do WineSense, espera-se:
+
+- Redução significativa de perdas financeiras  
+- Maior previsibilidade na produção  
+- Aumento da competitividade das vinícolas  
+- Melhoria na qualidade sensorial dos vinhos  
+
+---
+
+## 📚 Referências
+
+- OIV — Organização Internacional da Vinha e do Vinho  
+- UC Davis — Fermentation Studies  
+- Embrapa Uva e Vinho  
+- Literatura acadêmica sobre fermentação e IoT aplicada  
+
+---
+
+## 👥 Equipe
+
+- Enzo Basseto Martelozzo
+- Guilherme Gonçalves Britto
+- Jonatas Pereira Teles 
+- Marcos Paulos de Carvalho Ribeiro  
+- Marina Santos Paixão Ribeiro  
+- Rafael de Campos Naleto Filho  
